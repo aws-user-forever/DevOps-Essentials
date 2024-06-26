@@ -355,6 +355,8 @@ cd hello-world-master
 ls
 ```
 ```
+make sure the pom file has maven-war-plugin version 3.2.3
+
 git init .
 ```
 To set the `User Identity` ie... `email and user name.` you can use below:
