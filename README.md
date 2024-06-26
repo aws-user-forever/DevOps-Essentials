@@ -356,6 +356,7 @@ ls
 ```
 ```
 make sure the pom file has maven-war-plugin version 3.2.3
+```
 
 git init .
 ```
