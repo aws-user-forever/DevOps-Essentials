@@ -21,7 +21,7 @@ The objective of this lab is to set up two AWS EC2 instances, one for Jenkins an
 
 * **Region:** North Virginia (us-east-1).
 * **Use tag Name:** `CICDLab-YourName`
-* **AMI Type and OS Version:** `Ubuntu 22.04 LTS`
+* **AMI Type and OS Version(latest):** `Ubuntu 22.04 LTS`
 * **Instance type:** `t2.micro`
 * Create a new Keypair with the Name `CICDLab-Keypair-YourName`
 * In security groups, include ports `22 (SSH)` and `80 (HTTP)` (Add remaining ports later)
