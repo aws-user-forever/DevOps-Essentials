@@ -21,7 +21,7 @@ The objective of this lab is to set up two AWS EC2 instances, one for Jenkins an
 
 * **Region:** North Virginia (us-east-1).
 * **Use tag Name:** `CICDLab-YourName`
-* **AMI Type and OS Version(latest):** `Ubuntu 22.04 LTS`
+* **AMI Type and OS Version(latest):** `Ubuntu 24.04 LTS`
 * **Instance type:** `t2.micro`
 * Create a new Keypair with the Name `CICDLab-Keypair-YourName`
 * In security groups, include ports `22 (SSH)` and `80 (HTTP)` (Add remaining ports later)
@@ -79,19 +79,17 @@ sudo apt install ansible
 ```
 aws configure
 ```
-#### Enter the Credentials as below. Example:
-| **Access Key ID** | **Secret Access Key** |
-| ----------------- | --------------------- |
-| AKIAXMWJXSSHRD27T6SC | H4Vh0U5oenKfmJ/+FEUcbaGbDjcnGAmZvQLX7zTT |
+
 
 ---------------------------------------------------------------------
-**Note:** If you want to create new credentials, Follow the below steps:
+**Note:** We need permissions for Terraform, Follow the below steps:
 
-1. Go to the AWS console. On the top right corner, click on your name or AWS profile ID.
-2. Click on Security Credentials.
-3. Under AWS IAM Credentials, click on **Create Access Key**.
-4. If you already have two active keys, you can deactivate and delete the older one so that you can create a new one, then download, and save it.
-5. Then, Complete the `aws configure` step
+1. Go to the AWS console. Choose IAM Service.
+2. Select Roles and click on create Role.
+3. Select AWS Service and under services select EC2.
+4. Select **AdministratorAccess** policy and create a role
+5. Go to EC2 concole, Select EC2, SELECT Actions ---> security---> Modify IAM Role
+6. Attach the role created in the previous step
 
 ---------------------------------------------------------------------
 #### Once configured, do a smoke test to check if your credentials are valid and get access to AWS.
