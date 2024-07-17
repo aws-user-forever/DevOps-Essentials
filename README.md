@@ -245,7 +245,7 @@ It will show IP addresses of the Jenkins server and docker server as an example 
 ```
 sudo vi /etc/ansible/hosts 
 ```
-Once Updated, Save the File.
+Use i key on keyboard to Insert, Once Updated,press ESC then :wq! to Save and exit from the File.
 
 #### Now `SSH` into `Jenkins-server` and check they are accessible from `Anchor EC2`
 ```
