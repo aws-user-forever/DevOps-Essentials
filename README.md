@@ -77,7 +77,6 @@ sudo apt install ansible
 
 ```
 ```
-aws configure
 ```
 
 
